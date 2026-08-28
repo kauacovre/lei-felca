@@ -7,10 +7,12 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-router-dom": "^6.26.2"
+    "react-router-dom": "^6.26.2",
+    "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
