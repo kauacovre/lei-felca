@@ -45,19 +45,14 @@ export default function Navbar({ tutorials = [] }) {
                 handleScrollToTop();
               }
             }}
-            className="flex items-center gap-3 group focus:outline-none cursor-pointer"
+            className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none cursor-pointer select-none"
             aria-label="Lei Felca - Início"
           >
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 shadow-lg shadow-blue-500/10 group-hover:scale-105 transition-transform duration-200 p-0.5">
-              <img
-                src={logoImg}
-                alt="Logo Lei Felca"
-                className="w-full h-full object-contain rounded-lg"
-                onError={(e) => {
-                  e.currentTarget.style.display = "none";
-                }}
-              />
-            </div>
+            <img
+              src={logoImg}
+              alt="Logotipo Lei Felca"
+              className="h-10 sm:h-12 w-auto max-w-[52px] object-contain drop-shadow-sm group-hover:scale-105 group-hover:drop-shadow-md transition-all duration-200"
+            />
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-base md:text-lg tracking-tight text-slate-900 dark:text-white">

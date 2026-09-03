@@ -46,17 +46,11 @@ export default function Footer() {
           {/* Brand & Mission */}
           <div className="md:col-span-6 space-y-3">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 shadow-sm flex items-center justify-center p-0.5 shrink-0">
-                <img
-                  src={logoImg}
-                  alt="Logo Lei Felca"
-                  className="w-full h-full object-contain rounded-lg"
-                  onError={(e) => {
-                    // Fallback se imagem falhar
-                    e.currentTarget.style.display = "none";
-                  }}
-                />
-              </div>
+              <img
+                src={logoImg}
+                alt="Logotipo Lei Felca"
+                className="h-10 sm:h-11 w-auto max-w-[48px] object-contain drop-shadow-sm shrink-0"
+              />
               <div>
                 <span className="font-extrabold text-sm text-slate-900 dark:text-white tracking-tight block">
                   Lei Felca
