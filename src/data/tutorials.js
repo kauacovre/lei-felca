@@ -1,39 +1,38 @@
-// Fonte unica dos tutoriais: adicione uma nova plataforma aqui e a rota aparece automaticamente.
 export const tutorials = [
   {
     slug: "windows-family-safety",
     shortTitle: "Windows",
     platform: "Windows",
-    title: "Windows: configurar Microsoft Family Safety",
+    title: "Windows: cuide do tempo e do conteúdo",
     estimatedTime: "4 minutos",
     summary:
-      "Crie limites de tempo, bloqueie conteudos inadequados e acompanhe o uso do computador da crianca.",
+      "Use o Microsoft Family Safety para combinar horários, filtrar sites e acompanhar o computador.",
     sourceUrl: "https://support.microsoft.com/en-us/family-safety/set-screen-time-limits-across-devices",
     steps: [
       {
         title: "Acesse a area da familia",
         description:
-          "Entre em family.microsoft.com com sua conta Microsoft de responsavel. Confirme se voce aparece como organizador da familia."
+          "No seu celular ou computador, entre em family.microsoft.com com sua conta Microsoft. Você precisa ser o responsável da família."
       },
       {
         title: "Adicione a conta da crianca",
         description:
-          "Inclua o e-mail Microsoft da crianca ou crie uma conta infantil. No computador Windows, a crianca deve entrar com essa conta."
+          "Adicione o e-mail Microsoft da criança. No Windows, ela deve usar essa conta, e não uma conta de administrador."
       },
       {
         title: "Defina o tempo de tela",
         description:
-          "Abra o perfil da crianca, escolha Windows e ative os limites. Comece com uma janela clara, como 1 hora por dia apos a escola."
+          "Abra o perfil, escolha Windows e ative os limites. Separe dias de aula e fim de semana, se ajudar a rotina."
       },
       {
         title: "Filtre sites e pesquisas",
         description:
-          "Em Filtros de conteudo, ative o bloqueio de sites inadequados. Esse filtro funciona melhor quando a crianca usa o Microsoft Edge."
+          "Em Filtros de conteúdo, bloqueie sites inadequados. O filtro funciona melhor quando a criança usa o Microsoft Edge."
       },
       {
-        title: "Limite apps e jogos",
+        title: "Escolha os aplicativos permitidos",
         description:
-          "Em Apps e jogos, escolha os aplicativos que mais tomam tempo e defina limites separados para jogos, videos e navegador."
+          "Em Aplicativos e jogos, defina o que pode ser usado e por quanto tempo."
       }
     ],
     tips: [
@@ -46,168 +45,168 @@ export const tutorials = [
     slug: "roblox-controles",
     shortTitle: "Roblox",
     platform: "Roblox",
-    title: "Roblox: restringir chat, conteudo e transacoes",
+    title: "Roblox: limite conversa e compras",
     estimatedTime: "5 minutos",
     summary:
-      "Vincule sua conta de responsavel, reduza conversas com desconhecidos e coloque limite para gastos.",
+      "Ligue sua conta de responsável, escolha quem pode conversar e evite compras sem sua autorização.",
     sourceUrl: "https://about.roblox.com/parental-controls",
     steps: [
       {
-        title: "Abra os controles parentais",
+        title: "Abra o controle dos responsáveis",
         description:
-          "Na conta da crianca, entre em Configuracoes e depois em Controles parentais."
+          "Na conta da criança, abra Configurações e depois Controles dos responsáveis."
       },
       {
         title: "Vincule seu e-mail",
         description:
-          "Clique em Adicionar responsavel, informe seu e-mail e siga a mensagem recebida para criar ou vincular sua conta."
+          "Toque em Adicionar responsável, informe seu e-mail e confirme a mensagem recebida."
       },
       {
-        title: "Confirme sua identidade, se solicitado",
+        title: "Faça a confirmação pedida",
         description:
-          "O Roblox pode pedir verificacao de identidade para liberar todos os controles de responsavel."
+          "O Roblox pode pedir uma confirmação de identidade para liberar todos os controles."
       },
       {
-        title: "Ajuste chat e conexoes",
+        title: "Escolha quem pode conversar",
         description:
-          "Em Comunicacao, deixe chat, party chat e voz em Ninguem ou apenas amigos confiaveis, conforme a idade e maturidade da crianca."
+          "Em Comunicação, deixe texto e voz em Ninguém ou apenas Amigos, de acordo com a idade e o combinado da família."
       },
       {
-        title: "Controle gastos e experiencias",
+        title: "Proteja compras e conteúdo",
         description:
-          "Defina limite mensal de gastos, ative notificacoes de compra e escolha a classificacao de conteudo adequada."
+          "Defina um limite de gastos, ative avisos de compra e escolha a classificação de conteúdo adequada."
       }
     ],
     tips: [
-      "Nao compartilhe a senha do responsavel com a crianca.",
-      "Confira a lista de amigos e remova perfis desconhecidos ou insistentes.",
-      "Explique que compras com Robux sao dinheiro real e precisam de combinados claros."
+      "Não compartilhe a senha da conta de responsável.",
+      "Confira a lista de amigos e remova perfis desconhecidos.",
+      "Explique que Robux custa dinheiro de verdade e só deve ser comprado com autorização."
     ]
   },
   {
     slug: "youtube-restrito",
     shortTitle: "YouTube",
     platform: "YouTube",
-    title: "YouTube: ativar Modo Restrito e tempo de tela",
+    title: "YouTube: escolha vídeos e horários",
     estimatedTime: "4 minutos",
     summary:
-      "Reduza videos possivelmente adultos e use controles de tempo no YouTube Kids, Family Link ou no proprio aparelho.",
+      "Reduza vídeos inadequados e combine pausas usando o YouTube Kids, o Family Link ou o próprio aparelho.",
     sourceUrl: "https://support.google.com/youtube/answer/174084",
     steps: [
       {
-        title: "Entre no perfil correto",
+        title: "Use o perfil da criança",
         description:
-          "Abra o YouTube com a conta que a crianca usa. Se for menor, prefira uma conta supervisionada ou o app YouTube Kids."
+          "Abra o YouTube com a conta que a criança usa. Para os menores, prefira uma conta supervisionada ou o YouTube Kids."
       },
       {
-        title: "Ative o Modo Restrito",
+        title: "Ligue o Modo restrito",
         description:
-          "Toque na foto do perfil, abra Configuracoes e procure Modo Restrito. No computador, a opcao aparece no menu da foto do perfil."
+          "Toque na foto do perfil, abra Configurações e ative Modo restrito. Faça isso em cada aparelho usado pela criança."
       },
       {
-        title: "Configure supervisao pelo Family Link",
+        title: "Ajuste a supervisão",
         description:
-          "No app Family Link, selecione a crianca, abra Controles, YouTube e ajuste o nivel de conteudo permitido."
+          "No Family Link, selecione a criança, abra Controles e YouTube e escolha o nível de conteúdo."
       },
       {
-        title: "Coloque limite de tempo",
+        title: "Combine o tempo",
         description:
-          "No YouTube Kids, use Configuracoes e Definir timer. No Android ou iOS, limite o app YouTube pelos controles do sistema."
+          "No YouTube Kids, use Configurações e Definir timer. Também é possível limitar o app nos controles do Android ou iPhone."
       },
       {
-        title: "Desative estimulos desnecessarios",
+        title: "Desligue a reprodução automática",
         description:
-          "Desligue autoplay quando possivel e reduza notificacoes para evitar sequencias longas de videos sem pausa."
+          "Desative a reprodução automática e reduza notificações para criar pausas entre os vídeos."
       }
     ],
     tips: [
-      "Modo Restrito ajuda, mas nao substitui uma conta supervisionada para criancas.",
-      "Ative o controle em cada navegador ou dispositivo usado pela familia.",
-      "Assista alguns videos junto com a crianca para entender o que o algoritmo esta recomendando."
+      "O Modo restrito ajuda, mas não substitui uma conta supervisionada.",
+      "Confira a configuração em cada aparelho da família.",
+      "Assista a alguns vídeos junto com a criança e converse sobre as recomendações."
     ]
   },
   {
     slug: "android-family-link",
     shortTitle: "Android",
     platform: "Android",
-    title: "Android: configurar Google Family Link",
+    title: "Android: organize o celular",
     estimatedTime: "5 minutos",
     summary:
-      "Use o Family Link para limitar tempo, bloquear apps, aprovar downloads e acompanhar o uso do celular Android.",
+      "Use o Google Family Link para combinar horários, aprovar aplicativos e acompanhar o celular Android.",
     sourceUrl: "https://support.google.com/families/answer/7101025",
     steps: [
       {
-        title: "Instale o Family Link",
+        title: "Instale o Family Link no seu celular",
         description:
-          "No seu celular, instale o app Google Family Link e entre com sua conta Google de responsavel."
+          "Instale o Google Family Link no seu celular e entre com sua conta Google de responsável."
       },
       {
-        title: "Selecione ou crie a conta da crianca",
+        title: "Escolha a conta da criança",
         description:
-          "Escolha a conta Google infantil. Se a crianca ainda nao tiver uma, siga o fluxo do app para criar."
+          "Escolha a conta Google da criança. Se ela ainda não tiver uma, o aplicativo orienta você a criar."
       },
       {
-        title: "Vincule o aparelho da crianca",
+        title: "Ligue o celular da criança",
         description:
-          "No Android da crianca, abra Configuracoes, Google e Controles parentais. Siga as instrucoes na tela."
+          "No Android da criança, abra Configurações, Google e Controles dos responsáveis. Siga as instruções na tela."
       },
       {
-        title: "Defina rotina de uso",
+        title: "Defina a rotina",
         description:
-          "Em Tempo de tela, configure limite diario, horario de dormir e, se fizer sentido, horario de estudo."
+          "Em Tempo de tela, defina um limite diário e um horário para dormir."
       },
       {
-        title: "Controle apps e compras",
+        title: "Aprove aplicativos e compras",
         description:
-          "Em Limites de apps e Google Play, bloqueie aplicativos sensiveis, aprove downloads e restrinja conteudo por idade."
+          "Em Limites de apps e Google Play, aprove downloads, bloqueie aplicativos e escolha a classificação por idade."
       }
     ],
     tips: [
-      "Use limites diferentes para dias de aula e fim de semana.",
-      "Bloqueie apps de conversa que a familia ainda nao acompanha.",
-      "Mantenha o sistema Android atualizado para receber correcoes de seguranca."
+      "Use horários diferentes para dias de aula e fim de semana.",
+      "Converse sobre quais aplicativos a família ainda não conhece.",
+      "Mantenha o Android atualizado."
     ]
   },
   {
     slug: "ios-tempo-de-uso",
     shortTitle: "iOS",
     platform: "iOS",
-    title: "iOS: configurar Tempo de Uso e Controles da Familia",
+    title: "iPhone: organize o Tempo de Uso",
     estimatedTime: "5 minutos",
     summary:
-      "No iPhone ou iPad, limite apps, compras, comunicacao e conteudo inadequado com o Tempo de Uso.",
+      "No iPhone ou iPad, defina pausas, limite aplicativos e proteja compras e conteúdo.",
     sourceUrl: "https://support.apple.com/en-us/108806",
     steps: [
       {
-        title: "Abra Tempo de Uso",
+        title: "Abra o Tempo de Uso",
         description:
-          "No iPhone do responsavel, abra Ajustes e Tempo de Uso. Em Familia, toque no nome da crianca."
+          "No seu iPhone, abra Ajustes e Tempo de Uso. Em Família, toque no nome da criança."
       },
       {
-        title: "Ative atividade de apps e sites",
+        title: "Veja como o tempo é usado",
         description:
-          "Siga as instrucoes para ativar o relatorio de uso. Isso mostra quais apps e sites mais tomam tempo."
+          "Ative a atividade de apps e sites para ver quais aplicativos e páginas ocupam mais tempo."
       },
       {
-        title: "Crie um codigo de Tempo de Uso",
+        title: "Crie um código",
         description:
-          "Use um codigo diferente da senha do aparelho. Ele impede que a crianca altere os limites sem permissao."
+          "Use um código diferente da senha do aparelho. Ele evita que os limites sejam alterados sem sua autorização."
       },
       {
-        title: "Configure pausas e limites",
+        title: "Defina pausas e limites",
         description:
-          "Em Repouso, defina horarios sem uso. Em Limites de Apps, escolha categorias como jogos, redes sociais e videos."
+          "Em Repouso, escolha horários sem uso. Em Limites de Apps, limite jogos, redes sociais e vídeos."
       },
       {
-        title: "Ative restricoes de conteudo e compras",
+        title: "Proteja conteúdo e compras",
         description:
-          "Em Conteudo e Privacidade, bloqueie conteudo adulto, compras sem permissao e mudancas em ajustes sensiveis."
+          "Em Conteúdo e Privacidade, bloqueie conteúdo adulto, compras sem autorização e mudanças importantes nos ajustes."
       }
     ],
     tips: [
-      "Nao use datas de aniversario ou numeros obvios no codigo de Tempo de Uso.",
-      "Deixe Telefone e contatos de emergencia sempre permitidos.",
-      "Revise os pedidos de mais tempo com calma e explique cada decisao."
+      "Não use datas de aniversário ou números fáceis no código.",
+      "Deixe Telefone e contatos de emergência sempre permitidos.",
+      "Converse sobre os pedidos de mais tempo antes de decidir."
     ]
   }
 ];
