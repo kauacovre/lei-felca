@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Sun, Moon, Shield, Menu, X, BookOpen, Video } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 import logoImg from "../assets/logo.png";
@@ -8,17 +8,27 @@ export default function Navbar({ tutorials = [] }) {
   const { isDark, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const isHome = location.pathname === "/";
+
+  const handleScrollToTop = () => {
+    setMobileMenuOpen(false);
+    if (isHome) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+    }
+  };
 
   const handleScrollTo = (id) => {
     setMobileMenuOpen(false);
     if (!isHome) {
-      window.location.hash = `#${id}`;
+      navigate("/", { state: { scrollTo: id } });
       return;
     }
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -29,7 +39,13 @@ export default function Navbar({ tutorials = [] }) {
           {/* Brand Logo */}
           <Link
             to="/"
-            className="flex items-center gap-3 group focus:outline-none"
+            onClick={(e) => {
+              if (isHome) {
+                e.preventDefault();
+                handleScrollToTop();
+              }
+            }}
+            className="flex items-center gap-3 group focus:outline-none cursor-pointer"
             aria-label="Lei Felca - Início"
           >
             <div className="relative flex items-center justify-center w-10 h-10 rounded-xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 shadow-lg shadow-blue-500/10 group-hover:scale-105 transition-transform duration-200 p-0.5">
@@ -59,16 +75,16 @@ export default function Navbar({ tutorials = [] }) {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">
-            <Link
-              to="/"
-              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
+            <button
+              onClick={handleScrollToTop}
+              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all cursor-pointer ${
                 isHome
                   ? "text-blue-600 dark:text-blue-400 bg-blue-500/10"
                   : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5"
               }`}
             >
               Início
-            </Link>
+            </button>
 
             <button
               onClick={() => handleScrollTo("lei-felca")}
@@ -134,13 +150,12 @@ export default function Navbar({ tutorials = [] }) {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden border-b border-slate-200 dark:border-white/10 bg-white/95 dark:bg-[#0c0e14]/95 backdrop-blur-xl px-4 pt-2 pb-6 space-y-2">
-          <Link
-            to="/"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/5"
+          <button
+            onClick={handleScrollToTop}
+            className="w-full text-left block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/5 cursor-pointer"
           >
             Início
-          </Link>
+          </button>
           <button
             onClick={() => handleScrollTo("lei-felca")}
             className="w-full text-left block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/5"

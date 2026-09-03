@@ -6,7 +6,7 @@ export default function LeiFelcaSection() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section id="lei-felca" className="relative py-20 lg:py-28 overflow-hidden">
+    <section id="lei-felca" className="relative py-20 lg:py-28 overflow-hidden scroll-mt-16 md:scroll-mt-20">
       {/* Background ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 dark:bg-blue-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
 

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   Shield,
   Clock,
@@ -72,6 +72,25 @@ const platformIcons = {
 export default function Home({ tutorials = [] }) {
   const [searchFilter, setSearchFilter] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
+  const location = useLocation();
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const el = document.getElementById(location.state.scrollTo);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location.state]);
 
   const filteredTutorials = tutorials.filter((tutorial) => {
     const matchesSearch =
@@ -124,21 +143,23 @@ export default function Home({ tutorials = [] }) {
 
           {/* CTAs */}
           <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#tutoriais"
-              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-all hover:scale-[1.02] active:scale-[0.98]"
+            <button
+              type="button"
+              onClick={() => scrollToSection("tutoriais")}
+              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
             >
               Ver Tutoriais Práticos
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </button>
 
-            <a
-              href="#lei-felca"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-slate-100 hover:bg-slate-200 dark:bg-white/5 dark:hover:bg-white/10 text-slate-800 dark:text-white border border-slate-200 dark:border-white/10 backdrop-blur-md transition-all hover:border-slate-300 dark:hover:border-white/20"
+            <button
+              type="button"
+              onClick={() => scrollToSection("lei-felca")}
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-slate-100 hover:bg-slate-200 dark:bg-white/5 dark:hover:bg-white/10 text-slate-800 dark:text-white border border-slate-200 dark:border-white/10 backdrop-blur-md transition-all hover:border-slate-300 dark:hover:border-white/20 cursor-pointer"
             >
               <Video className="w-4 h-4 text-blue-500" />
               Entenda a "Lei Felca"
-            </a>
+            </button>
           </div>
 
           {/* Quick Snapshot Card with Spotlight Effect */}
@@ -208,7 +229,7 @@ export default function Home({ tutorials = [] }) {
       <LeiFelcaSection />
 
       {/* 3. PILLARS SECTION ("O QUE MUDA NO DIA A DIA") */}
-      <section id="pilares" className="py-20 bg-slate-50/50 dark:bg-[#07080b]/50 border-t border-b border-slate-200/60 dark:border-white/5">
+      <section id="pilares" className="py-20 bg-slate-50/50 dark:bg-[#07080b]/50 border-t border-b border-slate-200/60 dark:border-white/5 scroll-mt-16 md:scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 text-xs font-semibold uppercase tracking-wider mb-4">
@@ -257,7 +278,7 @@ export default function Home({ tutorials = [] }) {
       </section>
 
       {/* 4. TUTORIALS SECTION */}
-      <section id="tutoriais" className="py-20 lg:py-28 relative">
+      <section id="tutoriais" className="py-20 lg:py-28 relative scroll-mt-16 md:scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <div>

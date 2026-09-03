@@ -2,7 +2,41 @@ import React from "react";
 import { Users, GraduationCap, ShieldCheck, Heart } from "lucide-react";
 import logoImg from "../assets/logo.png";
 
-const teamMembers = ["Alexandre", "Kauã Covre", "João Pedro Borges"];
+function InstagramIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
+
+const teamMembers = [
+  {
+    name: "Alexandre Rodrigues",
+    handle: "@xand_rod",
+    url: "https://www.instagram.com/xand_rod?igsi=bHRzcW9sbnJ3dGJt",
+  },
+  {
+    name: "Kauã Covre",
+    handle: "@kauacovre",
+    url: "https://www.instagram.com/kauacovre?igsi=eGF5OHhkaHExbG5z",
+  },
+  {
+    name: "João Pedro Borges",
+    handle: "@jp.borgesz",
+    url: "https://www.instagram.com/jp.borgesz?igsi=eHB3OWRma3Fmbmlw",
+  },
+];
 
 export default function Footer() {
   return (
@@ -52,14 +86,19 @@ export default function Footer() {
                 <span>Desenvolvido pela <strong>Equipe Cão</strong></span>
               </p>
 
-              <div className="mt-2 flex flex-wrap md:justify-end gap-1.5">
+              <div className="mt-2 flex flex-wrap md:justify-end gap-2">
                 {teamMembers.map((member) => (
-                  <span
-                    key={member}
-                    className="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] font-medium bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 shadow-sm"
+                  <a
+                    key={member.name}
+                    href={member.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`Abrir Instagram de ${member.name} (${member.handle})`}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-medium bg-slate-100 hover:bg-pink-500/10 dark:bg-white/5 dark:hover:bg-pink-500/15 border border-slate-200 hover:border-pink-500/30 dark:border-white/10 dark:hover:border-pink-500/30 text-slate-700 hover:text-pink-600 dark:text-slate-300 dark:hover:text-pink-400 shadow-sm transition-all duration-200 group"
                   >
-                    {member}
-                  </span>
+                    <InstagramIcon className="w-3.5 h-3.5 text-slate-400 group-hover:text-pink-500 transition-colors" />
+                    <span>{member.name}</span>
+                  </a>
                 ))}
               </div>
 
