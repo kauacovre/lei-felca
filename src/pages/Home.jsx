@@ -360,10 +360,18 @@ export default function Home({ tutorials = [] }) {
                       <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-blue-600 dark:text-blue-400 group-hover:scale-105 group-hover:border-blue-500/40 transition-all duration-300">
                         <IconComp className="w-6 h-6" />
                       </div>
-                      <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/5">
-                        <Clock className="w-3 h-3 text-blue-500" />
-                        {tutorial.estimatedTime}
-                      </span>
+                      <div className="flex flex-col items-end gap-1.5">
+                        <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/5">
+                          <Clock className="w-3 h-3 text-blue-500" />
+                          {tutorial.estimatedTime}
+                        </span>
+                        {tutorial.video?.url && (
+                          <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                            <Video className="w-2.5 h-2.5" />
+                            Vídeo incluso
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
@@ -398,7 +406,10 @@ export default function Home({ tutorials = [] }) {
       </section>
 
       {/* 5. OFFICIAL CHANNELS & REPORTING */}
-      <section className="py-16 bg-slate-100/70 dark:bg-white/[0.02] border-t border-slate-200/60 dark:border-white/5">
+      <section
+        id="denuncia"
+        className="py-16 bg-slate-100/70 dark:bg-white/[0.02] border-t border-slate-200/60 dark:border-white/5 scroll-mt-16 md:scroll-mt-20"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-bold uppercase tracking-wider text-rose-500 dark:text-rose-400">
