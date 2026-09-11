@@ -72,6 +72,15 @@ function parseYouTubeUrl(url, defaultStart = 0) {
   }
 }
 
+function resolveAssetUrl(url) {
+  if (!url) return "";
+  if (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("data:")) return url;
+  const base = import.meta.env.BASE_URL || "/";
+  const cleanBase = base.endsWith("/") ? base : `${base}/`;
+  const cleanUrl = url.startsWith("/") ? url.slice(1) : url;
+  return `${cleanBase}${cleanUrl}`;
+}
+
 export default function TutorialPage({ tutorial }) {
   if (!tutorial) return null;
 
@@ -430,11 +439,11 @@ export default function TutorialPage({ tutorial }) {
                                 })
                               }
                             >
-                              <div className="relative aspect-video w-full overflow-hidden bg-slate-900">
+                              <div className="relative aspect-video w-full overflow-hidden bg-slate-900 flex items-center justify-center">
                                 <img
-                                  src={item.url}
+                                  src={resolveAssetUrl(item.url)}
                                   alt={item.caption || step.title}
-                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                  className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
                                   loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -629,7 +638,7 @@ export default function TutorialPage({ tutorial }) {
             {/* Image */}
             <div className="p-2 sm:p-4 max-h-[75vh] flex items-center justify-center overflow-auto">
               <img
-                src={activeScreenshot.url}
+                src={resolveAssetUrl(activeScreenshot.url)}
                 alt={activeScreenshot.caption || activeScreenshot.title}
                 className="max-h-[70vh] w-auto rounded-lg object-contain"
               />

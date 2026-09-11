@@ -27,86 +27,86 @@ export const tutorials = [
       {
         title: "Acesse o portal Microsoft Family Safety",
         description:
-          "No seu computador ou celular, abra o navegador e acesse family.microsoft.com. Entre com a sua conta Microsoft de responsável (Organizador da família). Caso ainda não possua um grupo familiar ativo, clique em 'Criar um grupo de família'.",
+          "No navegador do computador ou celular, acesse family.microsoft.com (ou account.microsoft.com/family/home). Conecte-se com a sua conta Microsoft de responsável (Organizador da família) para visualizar o painel inicial 'Sua família'.",
         screenshots: [
           {
-            url: "",
-            caption: "Página inicial do Microsoft Family Safety com a conta de responsável conectada.",
+            url: "/screenshots/windows/passo-1.jpeg",
+            caption: "Painel inicial 'Sua família' no portal Microsoft Family Safety com a conta do responsável conectada.",
             placeholderTitle: "Print 1: Portal Microsoft Family Safety",
             placeholderHint: "Captura da página inicial em family.microsoft.com com a conta de organizador logada."
           }
         ]
       },
       {
-        title: "Adicione um novo membro e selecione 'Membro'",
+        title: "Clique em 'Adicionar um membro da família'",
         description:
-          "No painel do seu grupo familiar, clique no botão 'Adicionar um membro da família' (+). É fundamental selecionar a opção 'Membro' (destinada a crianças e menores de idade). Nunca selecione 'Organizador' para a conta da criança, pois organizadores têm permissão para desativar regras e limites.",
+          "No painel inicial 'Sua família', localize o card com o ícone '+' identificado como 'Adicionar um membro da família' e clique nele para iniciar o processo de vinculação da conta do menor.",
         screenshots: [
           {
-            url: "",
-            caption: "Seleção da opção 'Membro' (perfil para menores de idade).",
-            placeholderTitle: "Print 2: Seleção de Perfil (Membro vs Organizador)",
-            placeholderHint: "Captura da tela de seleção com a opção 'Membro' marcada para a conta da criança."
+            url: "/screenshots/windows/passo-2.jpeg",
+            caption: "Destaque para o card 'Adicionar um membro da família' no painel principal.",
+            placeholderTitle: "Print 2: Adicionar um membro da família",
+            placeholderHint: "Captura destacando o botão 'Adicionar um membro da família'."
           }
         ]
       },
       {
-        title: "Insira o e-mail da criança e envie o convite",
+        title: "Insira o e-mail utilizado pelo menor para enviar o convite",
         description:
-          "Digite o endereço de e-mail da conta Microsoft da criança (ou crie um novo e-mail gratuito caso ela ainda não possua) e clique em 'Enviar convite'. A Microsoft enviará uma notificação segura para o e-mail cadastrado.",
+          "Na janela pop-up 'Convite por email', digite no campo 'Adicionar ID do email' o endereço de e-mail da conta Microsoft utilizado pela criança ou adolescente. Em seguida, clique no botão 'Enviar' para encaminhar o convite.",
         screenshots: [
           {
-            url: "",
-            caption: "Envio do convite de participação para o e-mail da criança.",
-            placeholderTitle: "Print 3: Inserção do e-mail e envio do convite",
-            placeholderHint: "Captura do formulário com o e-mail da criança preenchido e botão de envio."
+            url: "/screenshots/windows/passo-3.jpeg",
+            caption: "Janela de convite por e-mail com indicação do campo para digitar o e-mail do menor.",
+            placeholderTitle: "Print 3: Inserção do e-mail do menor",
+            placeholderHint: "Captura do formulário com o e-mail do menor preenchido e botão de envio."
           }
         ]
       },
       {
-        title: "Aceite o convite e autorize o consentimento parental",
+        title: "Aceite o convite e mantenha o compartilhamento de atividade ativo",
         description:
-          "Abra a mensagem recebida no e-mail da criança (ou na seção 'Membro pendente' > 'Aceitar agora') e clique em aceitar. A tela solicitará a autorização dos pais: selecione 'Meus pais podem entrar agora' (destacado no vídeo aos 0:56). O responsável deve entrar com sua senha na mesma janela para assinar digitalmente o consentimento legal e liberar os controles parentais.",
+          "Após o convite ser aceito na conta do menor de idade, faça login com a conta dele no portal. Em 'Configurações de privacidade', certifique-se de que a opção 'Compartilhar minha atividade' esteja ativada ('Sim'). Esta opção deve permanecer sempre ativada na conta do menor para que o responsável consiga acompanhar o tempo de tela e as atividades online.",
         screenshots: [
           {
-            url: "",
-            caption: "Etapa de consentimento parental: confirmação com 'Meus pais podem entrar agora'.",
-            placeholderTitle: "Print 4: Consentimento parental ('Meus pais podem entrar agora')",
-            placeholderHint: "Captura da confirmação aos 56s do vídeo: autorização parental para vincular o menor."
+            url: "/screenshots/windows/passo-4.jpeg",
+            caption: "Configurações de privacidade na conta do menor: a opção 'Compartilhar minha atividade' deve permanecer ativada.",
+            placeholderTitle: "Print 4: Compartilhar minha atividade ativado",
+            placeholderHint: "Captura mostrando a opção 'Compartilhar minha atividade' ativada no perfil do menor."
           }
         ]
       },
       {
-        title: "Vincule a conta de Usuário Padrão no Windows",
+        title: "Garanta que a conta conste como 'Usuário padrão' no Windows",
         description:
-          "No computador utilizado pela criança, abra 'Configurações' (Win + I) > 'Contas' > 'Família e outros usuários'. Certifique-se de que a criança faça login com a conta de membro recém-aprovada e garanta que o tipo de conta seja 'Usuário padrão' (e nunca 'Administrador'), evitando que ela desinstale os filtros ou altere restrições.",
+          "No computador utilizado pelo menor, abra 'Configurações' (Win + I) > 'Contas'. Verifique o tipo de perfil atribuído: na conta do menor de idade, em vez de 'Administrador', deve constar 'Usuário padrão'. Isso impede que o menor altere configurações do sistema, instale programas sem autorização ou desative os controles parentais.",
         screenshots: [
           {
-            url: "",
-            caption: "Configuração da conta do menor como 'Usuário padrão' no Windows.",
-            placeholderTitle: "Print 5: Conta adicionada no Windows como Usuário Padrão",
-            placeholderHint: "Captura da tela de Configurações do Windows > Contas > Família e outros usuários."
+            url: "/screenshots/windows/passo-5.jpeg",
+            caption: "Configurações de Contas do Windows: na conta do menor deve constar 'Usuário padrão' em vez de 'Administrador'.",
+            placeholderTitle: "Print 5: Conta como Usuário Padrão",
+            placeholderHint: "Captura das configurações do Windows com a conta definida como Usuário Padrão."
           }
         ]
       },
       {
-        title: "Configure tempo de tela, filtros web e relatórios",
+        title: "Ative os Relatórios de Atividades e Limites de Tempo de Tela",
         description:
-          "No painel do Family Safety, abra o perfil da criança: ative os 'Relatórios de atividades' para acompanhar o uso semanal, defina os limites de 'Tempo de tela' (com horários separados para dias de aula e fins de semana), ative 'Filtros de conteúdo' para bloquear páginas inadequadas e ativar SafeSearch no Microsoft Edge, e bloqueie jogos impróprios para a idade.",
+          "No painel do Family Safety, acesse o perfil do filho na seção Windows e ative o 'Relatório de atividades'. Ao manter essa opção ativa, você poderá limitar os horários em que o Windows será utilizado, estabelecer limites diários de tempo de tela e impedir o acesso a aplicativos e jogos indesejados.",
         screenshots: [
           {
-            url: "",
-            caption: "Painel de controle com Tempo de tela, Filtros web e Relatórios ativos.",
-            placeholderTitle: "Print 6: Painel de Atividades, Limites e Filtros de Conteúdo",
-            placeholderHint: "Captura do painel de controle da Microsoft com as regras de tempo e filtros ativados."
+            url: "/screenshots/windows/passo-6.jpeg",
+            caption: "Ativação do 'Relatório de atividades' para limitar horários de uso do Windows e bloquear aplicativos indesejados.",
+            placeholderTitle: "Print 6: Relatório de atividades e limites",
+            placeholderHint: "Captura das configurações do Windows no Family Safety com o relatório ativado."
           }
         ]
       }
     ],
     tips: [
       "A conta da criança no Windows deve ser sempre do tipo 'Usuário padrão' para evitar a desinstalação de controles ou instalação de apps não autorizados.",
-      "O filtro de conteúdo web e bloqueio de sites inadequados funciona de forma integrada e segura no navegador Microsoft Edge.",
-      "Converse com seu filho sobre os limites acordados e acompanhe o relatório semanal de atividades enviado por e-mail."
+      "Mantenha a opção 'Compartilhar minha atividade' ativada na conta do menor para que as regras de tempo de tela e bloqueios funcionem corretamente.",
+      "No painel do Family Safety, você pode definir horários separados para dias de aula e fins de semana, garantindo equilíbrio na rotina dos seus filhos."
     ]
   },
   {
@@ -225,10 +225,10 @@ export const tutorials = [
     slug: "youtube-restrito",
     shortTitle: "YouTube",
     platform: "YouTube",
-    title: "YouTube: configure o Modo Restrito e o YouTube Kids",
-    estimatedTime: "4 minutos",
+    title: "YouTube: como ativar o Modo Restrito e proteger a navegação",
+    estimatedTime: "2 minutos",
     summary:
-      "Aprenda a ativar o Modo Restrito no YouTube e configure o YouTube Kids com faixas etárias, bloqueio de pesquisa e limites de tempo.",
+      "Aprenda o passo a passo direto para ativar o Modo Restrito no YouTube, ocultando vídeos com classificação adulta e garantindo uma navegação mais segura no computador.",
     sourceUrl: "https://support.google.com/youtube/answer/174084",
     video: {
       url: "https://www.youtube.com/watch?v=KpF0S4Wglyc",
@@ -236,101 +236,60 @@ export const tutorials = [
       title: "Como colocar controle dos pais no Youtube (GUIA COMPLETO)",
       channel: "Como Fazer Isso",
       duration: "Guia Completo",
-      recommendedStartTime: 0,
-      recommendedStartTimeLabel: "Início do Tutorial",
+      recommendedStartTime: 30,
+      recommendedStartTimeLabel: "0:30 (Ativação do Modo Restrito)",
       keyMoments: [
         { time: 0, timeFormatted: "0:00", label: "Apresentação: Modo Restrito vs YouTube Kids" },
-        { time: 30, timeFormatted: "0:30", label: "Ativando o Modo Restrito no app do YouTube" },
-        { time: 70, timeFormatted: "1:10", label: "Instalação e configuração inicial do YouTube Kids" },
-        { time: 110, timeFormatted: "1:50", label: "Seleção da faixa etária e maturidade de conteúdo" },
-        { time: 150, timeFormatted: "2:30", label: "Desativação da pesquisa aberta e canais aprovados" },
-        { time: 195, timeFormatted: "3:15", label: "Programação de timer e desligamento de autoplay" }
+        { time: 30, timeFormatted: "0:30", label: "Ativando o Modo Restrito no YouTube" },
+        { time: 70, timeFormatted: "1:10", label: "Configuração do YouTube Kids para menores" },
+        { time: 150, timeFormatted: "2:30", label: "Filtros de conteúdo e segurança" }
       ]
     },
     steps: [
       {
-        title: "Ative o Modo Restrito no aplicativo do YouTube",
+        title: "Clique no ícone de perfil no canto superior direito",
         description:
-          "No aplicativo oficial do YouTube (no celular ou tablet do menor), toque no ícone de perfil no canto inferior direito, selecione a engrenagem de 'Configurações' no canto superior, entre em 'Geral' e ative a chave 'Modo Restrito' para ocultar vídeos com classificação adulta.",
+          "Acesse o site do YouTube (youtube.com) no navegador do computador. No canto superior direito da tela inicial, clique na foto ou avatar da sua conta Google (destacado na imagem com a indicação 1).",
         screenshots: [
           {
-            url: "",
-            caption: "Ativação do Modo Restrito em Configurações > Geral.",
-            placeholderTitle: "Print 1: Chave do Modo Restrito no YouTube",
-            placeholderHint: "Captura do menu Configurações > Geral com o Modo Restrito ligado."
+            url: "/screenshots/youtube/passo-1.png",
+            caption: "Passo 1: Clique na foto de perfil no canto superior direito da página do YouTube.",
+            placeholderTitle: "Print 1: Ícone de perfil no YouTube",
+            placeholderHint: "Captura da tela inicial do YouTube com destaque no ícone do perfil."
           }
         ]
       },
       {
-        title: "Instale o YouTube Kids para crianças menores",
+        title: "Localize e clique na opção 'Modo restrito: desativado'",
         description:
-          "Para crianças menores de 13 anos, instale o aplicativo oficial YouTube Kids pela Google Play Store ou App Store. O app oferece uma biblioteca totalmente separada e curada, longe dos riscos da plataforma aberta.",
+          "No menu suspenso que se abre ao clicar no perfil, role para baixo até encontrar a opção 'Modo restrito: desativado' (destacada na imagem com a indicação 2). Clique sobre ela para abrir o submenu de configuração.",
         screenshots: [
           {
-            url: "",
-            caption: "Tela de instalação e boas-vindas do YouTube Kids.",
-            placeholderTitle: "Print 2: Instalação do app YouTube Kids",
-            placeholderHint: "Captura da página de download ou tela de início do YouTube Kids."
+            url: "/screenshots/youtube/passo-2.png",
+            caption: "Passo 2: Seleção da opção 'Modo restrito: desativado' no menu da conta.",
+            placeholderTitle: "Print 2: Opção Modo Restrito no menu",
+            placeholderHint: "Captura do menu suspenso destacando a opção Modo Restrito."
           }
         ]
       },
       {
-        title: "Faça login com a conta do responsável",
+        title: "Ative a chave 'ATIVE O MODO RESTRITO'",
         description:
-          "Abra o YouTube Kids, selecione 'Sou pai/mãe', confirme seu ano de nascimento e faça login com sua conta Google de responsável para vincular os perfis e assumir a gestão.",
+          "Na janela do Modo Restrito, leia as orientações e clique na chave seletora ao lado de 'ATIVE O MODO RESTRITO' (destacada na imagem com a indicação 3) para ligá-la. Esse filtro ajuda a ocultar vídeos com potencial conteúdo adulto ou impróprio para menores neste navegador.",
         screenshots: [
           {
-            url: "",
-            caption: "Identificação dos responsáveis e login Google.",
-            placeholderTitle: "Print 3: Autenticação do Responsável",
-            placeholderHint: "Captura da tela 'Sou pai/mãe' e autenticação da conta dos pais."
-          }
-        ]
-      },
-      {
-        title: "Escolha a faixa etária adequada da criança",
-        description:
-          "Selecione o nível de conteúdo adequado: 'Pré-escolares' (até 4 anos), 'Crianças menores' (5 a 8 anos) ou 'Crianças maiores' (9 a 12 anos). Isso filtra instantaneamente as animações, músicas e canais adequados à maturidade do seu filho.",
-        screenshots: [
-          {
-            url: "",
-            caption: "Seleção do nível de conteúdo por faixa etária.",
-            placeholderTitle: "Print 4: Nível de Conteúdo por Idade",
-            placeholderHint: "Captura da seleção de faixa etária no YouTube Kids."
-          }
-        ]
-      },
-      {
-        title: "Desative a pesquisa livre ou aprove apenas canais selecionados",
-        description:
-          "Nas configurações do perfil infantil no YouTube Kids, desative a 'Pesquisa'. Com a busca desligada, a criança só poderá assistir a vídeos de canais verificados e aprovados pela equipe do YouTube ou manualmente por você.",
-        screenshots: [
-          {
-            url: "",
-            caption: "Chave de busca/pesquisa desligada nas opções dos pais.",
-            placeholderTitle: "Print 5: Desativação da Pesquisa Livre",
-            placeholderHint: "Captura das configurações de perfil com a barra de busca desabilitada."
-          }
-        ]
-      },
-      {
-        title: "Defina o timer de uso e desative o Autoplay",
-        description:
-          "No menu dos pais (ícone de cadeado), use a ferramenta 'Timer' para determinar quantos minutos a criança pode assistir antes do bloqueio da tela, e desligue o autoplay para evitar que vídeos fiquem rodando continuamente.",
-        screenshots: [
-          {
-            url: "",
-            caption: "Programação do timer de bloqueio e desativação do autoplay.",
-            placeholderTitle: "Print 6: Timer de Tempo de Tela e Autoplay",
-            placeholderHint: "Captura do temporizador de bloqueio do YouTube Kids em contagem regressiva."
+            url: "/screenshots/youtube/passo-3.png",
+            caption: "Passo 3: Ativação da chave do Modo Restrito para filtrar vídeos inadequados.",
+            placeholderTitle: "Print 3: Ativação do Modo Restrito",
+            placeholderHint: "Captura do painel com a chave 'ATIVE O MODO RESTRITO' ativada."
           }
         ]
       }
     ],
     tips: [
-      "O Modo Restrito precisa ser ativado em cada navegador e aparelho diferente que a criança utilize.",
-      "No YouTube Kids, desativar a busca é a maneira mais segura de evitar recomendações inesperadas do algoritmo.",
-      "Converse com seus filhos sobre os vídeos que eles mais gostam e assistam juntos sempre que possível."
+      "O Modo Restrito funciona por navegador: certifique-se de repetir esse procedimento em todos os navegadores utilizados pela criança no computador (Google Chrome, Microsoft Edge, Firefox, etc.).",
+      "Para evitar que a criança desative o Modo Restrito, você pode bloquear o Modo Restrito no navegador usando sua conta Google ou vincular a conta do menor ao Google Family Link.",
+      "Para crianças menores de 13 anos, considere utilizar o YouTube Kids (youtubekids.com), que oferece um ambiente fechado com conteúdos previamente selecionados para a infância."
     ]
   },
   {
