@@ -5,7 +5,7 @@ Todos os 5 tutoriais do site já contam com espaços reservados para receber os 
 ### 1. Estrutura Recomendada de Pastas
 Salve suas capturas em subpastas organizadas dentro de `public/screenshots/`:
 - **Windows**: `public/screenshots/windows/passo-1.png` a `passo-6.png`
-- **Roblox**: `public/screenshots/roblox/passo-1.png` a `passo-6.png`
+- **Roblox**: `public/screenshots/roblox/passo-1.jpg` a `passo-3.jpg`
 - **YouTube**: `public/screenshots/youtube/passo-1.png` a `passo-6.png`
 - **Android**: `public/screenshots/android/passo-1.png` a `passo-6.png`
 - **iOS**: `public/screenshots/ios/passo-1.png` a `passo-6.png`
