@@ -320,80 +320,132 @@ export const tutorials = [
     },
     steps: [
       {
-        title: "Instale o Family Link no celular dos pais e abra o assistente",
+        title: "No Google Family Link, toque em '+ Adicionar criança'",
         description:
-          "No seu celular (responsável), baixe o aplicativo Google Family Link pela Play Store ou App Store. Abra o aplicativo e faça login com sua conta Google de responsável.",
+          "No aplicativo Google Family Link no aparelho do responsável, localize a tela 'Gerencie os dispositivos da criança' e toque no botão '+ Adicionar criança' para iniciar a vinculação de um novo dispositivo ou conta infantil.",
         screenshots: [
           {
-            url: "",
-            caption: "App Family Link instalado no aparelho do responsável.",
-            placeholderTitle: "Print 1: Aplicativo Family Link dos Pais",
-            placeholderHint: "Captura da tela inicial do Family Link na conta do adulto."
+            url: "/screenshots/android/android-passo-01.jpeg",
+            caption: "Tela inicial do app Family Link com o botão '+ Adicionar criança'.",
+            placeholderTitle: "Print 1: Adicionar criança no Family Link",
+            placeholderHint: "Captura da tela inicial com a opção de adicionar dispositivo ou conta da criança."
           }
         ]
       },
       {
-        title: "Vincule a conta Google da criança ao grupo familiar",
+        title: "Acesse 'Controles da família' nos Serviços do Google",
         description:
-          "No aplicativo dos pais, clique em adicionar membro e escolha a conta Google do menor (ou crie um e-mail infantil supervisionado caso ele ainda não tenha).",
+          "No smartphone da criança, abra as Configurações do Android e entre em 'Serviços do Google'. Selecione a aba 'Todos os serviços', desça até a seção 'Crianças e família' e toque na opção 'Controles da família'.",
         screenshots: [
           {
-            url: "",
-            caption: "Seleção ou criação da conta Google da criança.",
-            placeholderTitle: "Print 2: Vinculação da Conta Infantil",
-            placeholderHint: "Captura da tela de vinculação de e-mail da criança no Family Link."
+            url: "/screenshots/android/android-passo-02.jpeg",
+            caption: "Aba 'Todos os serviços' nos Serviços do Google com destaque para a opção 'Controles da família'.",
+            placeholderTitle: "Print 2: Controles da família nas Configurações",
+            placeholderHint: "Captura das configurações do Android na seção Crianças e família."
           }
         ]
       },
       {
-        title: "Conecte o smartphone Android da criança",
+        title: "Selecione a conta da criança e toque em 'Supervisionar a conta'",
         description:
-          "No celular da criança, abra 'Configurações' > 'Google' > 'Controles dos responsáveis' (ou 'Bem-estar digital e controle parental'). Toque em 'Criança ou adolescente' e siga o assistente digitando o código de segurança gerado no aparelho dos pais.",
+          "Na tela 'Configure os controles da família', visualize a janela 'Selecione a conta da criança ou do adolescente'. Confirme a conta de e-mail do menor e toque no botão em destaque 'Supervisionar a conta' para dar início ao processo de supervisão.",
         screenshots: [
           {
-            url: "",
-            caption: "Configurações do Android da criança autorizando a supervisão parental.",
-            placeholderTitle: "Print 3: Emparelhamento no Celular da Criança",
-            placeholderHint: "Captura das configurações do Android na tela de inserção do código dos pais."
+            url: "/screenshots/android/android-passo-03.jpeg",
+            caption: "Janela de seleção da conta do menor com o botão 'Supervisionar a conta' em destaque.",
+            placeholderTitle: "Print 3: Seleção e Supervisão da Conta",
+            placeholderHint: "Captura da tela com o e-mail da criança selecionado e o botão 'Supervisionar a conta'."
           }
         ]
       },
       {
-        title: "Programe o Limite Diário de Tela e Horário de Dormir",
+        title: "Informe a Conta do Google do familiar responsável",
         description:
-          "No app dos pais, abra 'Tempo de tela' e defina o limite diário de utilização (ex: 2 horas) e o 'Horário de dormir' (bloqueio noturno programado), podendo estipular regras diferentes para dias de semana e fins de semana.",
+          "Na tela 'Familiar responsável, informe sua Conta do Google', digite o endereço de e-mail ou número de telefone da sua conta Google no campo indicado e toque no botão 'Avançar' para vincular sua conta de responsável.",
         screenshots: [
           {
-            url: "",
-            caption: "Programação de limite diário de uso e bloqueio noturno.",
-            placeholderTitle: "Print 4: Limites de Tempo e Horário de Dormir",
-            placeholderHint: "Captura do gráfico de tempo e horários de descanso no painel do Family Link."
+            url: "/screenshots/android/android-passo-04.jpeg",
+            caption: "Tela de identificação do responsável com o campo 'E-mail ou telefone' e botão 'Avançar'.",
+            placeholderTitle: "Print 4: Conta do Responsável",
+            placeholderHint: "Captura da tela de identificação do familiar responsável."
           }
         ]
       },
       {
-        title: "Exija aprovação para downloads e compras na Play Store",
+        title: "Confirme a data de nascimento da criança",
         description:
-          "Em 'Controles' > 'Google Play', selecione 'Exigir aprovação para: Todo o conteúdo'. Dessa forma, a criança não conseguirá baixar nenhum jogo novo sem que você aprove diretamente no seu celular.",
+          "Na etapa 'Confirme a data de nascimento', preencha os campos 'Dia', 'Mês' e 'Ano' da criança para validar a faixa etária e as regras de supervisão adequadas à idade. Em seguida, toque em 'Confirmar'.",
         screenshots: [
           {
-            url: "",
-            caption: "Opção de aprovação parental ativada para downloads na Play Store.",
-            placeholderTitle: "Print 5: Aprovação de Apps e Compras na Play Store",
-            placeholderHint: "Captura da regra de aprovação obrigatória de compras e downloads."
+            url: "/screenshots/android/android-passo-05.jpeg",
+            caption: "Confirmação da data de nascimento da criança nos campos Dia, Mês e Ano.",
+            placeholderTitle: "Print 5: Data de Nascimento da Criança",
+            placeholderHint: "Captura dos campos de preenchimento de data de nascimento."
           }
         ]
       },
       {
-        title: "Ative filtros de pesquisa SafeSearch e localização",
+        title: "Ative a permissão de administração do dispositivo",
         description:
-          "Em 'Filtros no Google Chrome', marque 'Tentar bloquear sites explícitos' e ative o SafeSearch na Busca. Além disso, habilite a 'Localização' para visualizar onde o smartphone do seu filho está em tempo real.",
+          "Na tela 'Seu familiar responsável precisa ser um administrador deste dispositivo', leia os termos que autorizam o Family Link a gerenciar as regras de uso do aparelho (sem acesso a senhas ou conteúdo da tela). Toque em 'Avançar' para conceder a administração.",
         screenshots: [
           {
-            url: "",
-            caption: "Filtros web no Chrome e mapa de localização do dispositivo.",
-            placeholderTitle: "Print 6: Filtros Web e Localização em Tempo Real",
-            placeholderHint: "Captura da tela de segurança web e mapa de localização ativa no Family Link."
+            url: "/screenshots/android/android-passo-06.jpeg",
+            caption: "Tela de autorização para o Family Link atuar como administrador do dispositivo.",
+            placeholderTitle: "Print 6: Administrador do Dispositivo",
+            placeholderHint: "Captura da solicitação de permissão de administração do aparelho."
+          }
+        ]
+      },
+      {
+        title: "Ajuste os filtros de conteúdo na Google Play Store",
+        description:
+          "Na tela 'Analise as configurações', expanda a seção 'Controles no Google Play'. Verifique a ativação dos controles de filtragem e a exigência de aprovação da família para novos downloads e compras, definindo as classificações para 'Apps e jogos', 'Filmes' e 'Livros'.",
+        screenshots: [
+          {
+            url: "/screenshots/android/android-passo-07.jpeg",
+            caption: "Seção 'Controles no Google Play' aberta para definição de restrições de apps, filmes e livros.",
+            placeholderTitle: "Print 7: Controles no Google Play",
+            placeholderHint: "Captura das configurações de restrições na Google Play Store."
+          }
+        ]
+      },
+      {
+        title: "Ative o bloqueio de sites com conteúdo explícito no Google Chrome",
+        description:
+          "Ainda na tela 'Analise as configurações', expanda a seção 'Filtros no Google Chrome'. Selecione a opção 'Tentar bloquear sites com conteúdo explícito' para aplicar a filtragem de páginas violentas e de teor sexual no navegador.",
+        screenshots: [
+          {
+            url: "/screenshots/android/android-passo-08.jpeg",
+            caption: "Filtros no Google Chrome com a opção 'Tentar bloquear sites com conteúdo explícito' selecionada.",
+            placeholderTitle: "Print 8: Filtros no Google Chrome",
+            placeholderHint: "Captura da tela de seleção de filtros de navegação no Chrome."
+          }
+        ]
+      },
+      {
+        title: "Defina um PIN de 4 dígitos para os controles da família",
+        description:
+          "Na tela 'Definir um PIN dos controles da família', cadastre uma senha numérica de segurança com pelo menos 4 dígitos. Esse PIN é obrigatório para impedir que a criança modifique ou desative as restrições no celular. Toque em 'AVANÇAR'.",
+        screenshots: [
+          {
+            url: "/screenshots/android/android-passo-09.jpeg",
+            caption: "Tela de criação do PIN de segurança com exigência mínima de 4 dígitos.",
+            placeholderTitle: "Print 9: PIN dos Controles da Família",
+            placeholderHint: "Captura da tela de inserção do código PIN de segurança parental."
+          }
+        ]
+      },
+      {
+        title: "Gerencie limites, descanso e localização no painel completo",
+        description:
+          "Acesse o painel consolidado 'Controles da família' no dispositivo para gerenciar as ferramentas ativas: 'Limite diário', 'Limites para apps', 'Descanso', 'Horário escolar', 'Filtros da app store', 'Contatos, ligações e mensagens de texto' e 'Compartilhamento de local'.",
+        screenshots: [
+          {
+            url: "/screenshots/android/android-passo-10.jpeg",
+            caption: "Painel consolidado dos Controles da família com todas as ferramentas de supervisão ativas.",
+            placeholderTitle: "Print 10: Painel de Controles da Família",
+            placeholderHint: "Captura da visão geral com todos os limites e configurações de supervisão."
           }
         ]
       }
