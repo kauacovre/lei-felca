@@ -113,10 +113,10 @@ export const tutorials = [
     slug: "roblox-controles",
     shortTitle: "Roblox",
     platform: "Roblox",
-    title: "Roblox: limite conversa e compras",
-    estimatedTime: "5 minutos",
+    title: "Roblox: controle de privacidade e comunicação",
+    estimatedTime: "3 minutos",
     summary:
-      "Ligue sua conta de responsável, configure o PIN de 4 dígitos, restrinja bate-papo de voz e texto, e bloqueie compras de Robux sem autorização.",
+      "Aprenda o passo a passo ilustrado para acessar as Configurações do Roblox, entrar na aba 'Restrições de privacidade e conteúdo' e gerenciar as opções de Comunicação (bate-papo, turmas, voz e câmera).",
     sourceUrl: "https://about.roblox.com/parental-controls",
     video: {
       url: "https://www.youtube.com/watch?v=xmtHrndEeGU",
@@ -128,97 +128,84 @@ export const tutorials = [
       recommendedStartTimeLabel: "Início do Tutorial",
       keyMoments: [
         { time: 0, timeFormatted: "0:00", label: "Abertura e importância do controle parental no Roblox" },
-        { time: 30, timeFormatted: "0:30", label: "Acessar Configurações e Controles dos Responsáveis" },
-        { time: 60, timeFormatted: "1:00", label: "Definir PIN de segurança dos pais (4 dígitos)" },
-        { time: 90, timeFormatted: "1:30", label: "Ativar Restrições de Conta e curadoria de conteúdo" },
-        { time: 135, timeFormatted: "2:15", label: "Restringir chat de texto, voz e privacidade de amizades" },
-        { time: 180, timeFormatted: "3:00", label: "Bloqueio de gastos e compras com dinheiro real" }
+        { time: 30, timeFormatted: "0:30", label: "Acessar Configurações e Menu Mais" },
+        { time: 90, timeFormatted: "1:30", label: "Restrições de privacidade e conteúdo" },
+        { time: 135, timeFormatted: "2:15", label: "Configurar comunicação, chat e áudio por voz" }
       ]
     },
     steps: [
       {
-        title: "Acesse as Configurações do Roblox",
+        title: "Clique no ícone 'Mais' (três pontinhos) no menu lateral",
         description:
-          "Na conta do Roblox da criança (pelo computador ou celular), clique no ícone da engrenagem no canto superior direito (ou no ícone de três pontinhos 'Mais' no aplicativo móvel) e selecione 'Configurações'.",
+          "Na tela inicial do Roblox (no computador ou aplicativo móvel), localize a barra de navegação no canto esquerdo da tela. Clique no ícone circular com três pontinhos identificado como 'Mais' (destacado pela seta vermelha na imagem) para abrir a lista de opções e acessar as Configurações da conta.",
         screenshots: [
           {
-            url: "",
-            caption: "Menu de Configurações no Roblox através da engrenagem ou ícone de Mais.",
-            placeholderTitle: "Print 1: Menu de Configurações do Roblox",
-            placeholderHint: "Captura da tela inicial do Roblox destacando a engrenagem e a opção 'Configurações'."
+            url: "/screenshots/roblox/passo-1.jpg",
+            caption: "Passo 1: Clique na opção 'Mais' (três pontinhos) no menu lateral esquerdo da tela inicial do Roblox.",
+            placeholderTitle: "Print 1: Menu Mais no Roblox",
+            placeholderHint: "Captura da tela inicial com a seta vermelha apontando para a opção 'Mais'."
           }
         ]
       },
       {
-        title: "Abra 'Controles dos Responsáveis' e vincule o e-mail",
+        title: "Acesse 'Restrições de privacidade e conteúdo' e selecione 'Comunicação'",
         description:
-          "Dentro de Configurações, clique em 'Controles dos Responsáveis' (Parental Controls). Insira o e-mail de um dos pais ou responsável e confirme o e-mail de verificação para habilitar a gestão parental.",
+          "Na janela de Configurações, selecione no menu lateral a categoria 'Restrições de privacidade e conteúdo'. No painel exibido à direita, localize e clique sobre a opção 'Comunicação' (destacada pela seta vermelha na imagem) para gerenciar as permissões de mensagens, bate-papo e contato social.",
         screenshots: [
           {
-            url: "",
-            caption: "Aba de Controles dos Responsáveis e vínculo de e-mail parental.",
-            placeholderTitle: "Print 2: Aba Controles dos Responsáveis e E-mail",
-            placeholderHint: "Captura da seção 'Controles dos Responsáveis' com o campo de e-mail do adulto."
+            url: "/screenshots/roblox/passo-2.jpg",
+            caption: "Passo 2: Na seção 'Restrições de privacidade e conteúdo', selecione a opção 'Comunicação'.",
+            placeholderTitle: "Print 2: Seção Comunicação",
+            placeholderHint: "Captura das Configurações destacando 'Restrições de privacidade e conteúdo' e a indicação para 'Comunicação'."
           }
         ]
       },
       {
-        title: "Crie o PIN de segurança dos responsáveis (4 dígitos)",
+        title: "Configure as opções de Comunicação e Interação Social",
         description:
-          "Ative a opção 'PIN dos Responsáveis' e cadastre um código numérico de 4 dígitos. Esse PIN é obrigatório para modificar qualquer restrição e impede que a criança desative os filtros por conta própria. Nunca compartilhe esse PIN com a criança.",
+          "Dentro do menu 'Comunicação', você terá acesso ao painel com todas as opções de bate-papo, turmas de amizade, áudio e câmera. Como não adentramos em uma funcionalidade específica nesta etapa, consulte o quadro informativo detalhado logo abaixo para conhecer o que cada opção permite executar e configurar o nível de proteção adequado para o menor.",
         screenshots: [
           {
-            url: "",
-            caption: "Cadastro do PIN de segurança parental de 4 dígitos.",
-            placeholderTitle: "Print 3: Definição do PIN Parental de 4 Dígitos",
-            placeholderHint: "Captura da janela de cadastro e ativação do PIN de segurança de 4 dígitos."
+            url: "/screenshots/roblox/passo-3.jpg",
+            caption: "Passo 3: Tela com as quatro opções de Comunicação (Bate-papo da experiência, Converse e forme turmas com suas amizades, Uso de dados de voz e Entrada de câmera).",
+            placeholderTitle: "Print 3: Opções de Comunicação no Roblox",
+            placeholderHint: "Captura do menu Comunicação exibindo as quatro opções configuráveis para responsáveis."
           }
-        ]
-      },
-      {
-        title: "Ative as 'Restrições de Conta' para conteúdo seguro",
-        description:
-          "Ative a chave 'Restrições de Conta' (Account Restrictions). Essa função bloqueia automaticamente experiências inadequadas para menores e desativa o recebimento de mensagens diretas de estranhos, mantendo a navegação em uma lista curada pela própria plataforma.",
-        screenshots: [
-          {
-            url: "",
-            caption: "Ativação da chave de Restrições de Conta no Roblox.",
-            placeholderTitle: "Print 4: Chave de Restrições de Conta Ativada",
-            placeholderHint: "Captura da chave 'Restrições de Conta' ativada no painel de controle."
-          }
-        ]
-      },
-      {
-        title: "Restrinja o Chat de Texto, Voz e Mensagens de Estranhos",
-        description:
-          "Acesse a aba 'Privacidade' nas Configurações. Na seção 'Configurações de Contato e Comunicação', defina 'Quem pode conversar comigo no chat' para 'Apenas Amigos' ou 'Ninguém'. Caso o bate-papo por voz esteja ativado, desligue-o para evitar contato com pessoas mal-intencionadas.",
-        screenshots: [
-          {
-            url: "",
-            caption: "Ajustes de privacidade: chat de texto e voz restritos a Amigos ou Ninguém.",
-            placeholderTitle: "Print 5: Restrições de Privacidade, Chat e Voz",
-            placeholderHint: "Captura da tela de Privacidade com opções de comunicação definidas como 'Apenas Amigos' ou 'Ninguém'."
-          }
-        ]
-      },
-      {
-        title: "Bloqueie gastos com Robux e defina limite financeiro",
-        description:
-          "Em 'Controles dos Responsáveis' > 'Restrições de Gastos Mensais', defina o limite de compras como R$ 0,00 ou exija notificação/aprovação imediata de compras por e-mail, garantindo que compras com dinheiro real não sejam feitas sem o seu consentimento prévio.",
-        screenshots: [
-          {
-            url: "",
-            caption: "Limite de gastos mensais configurado para R$ 0,00 e notificações de compra ativadas.",
-            placeholderTitle: "Print 6: Bloqueio de Gastos e Limite Financeiro",
-            placeholderHint: "Captura do painel de limites de gastos mensais e notificações de compras de Robux."
-          }
-        ]
+        ],
+        additionalInfo: {
+          title: "Opções que os pais ou responsáveis podem executar nesta tela:",
+          text: "Como esta tela reúne as principais formas de interação do Roblox e não adentramos em uma funcionalidade específica, você pode clicar em qualquer uma das opções listadas para aplicar os ajustes de proteção necessários:",
+          options: [
+            {
+              label: "Bate-papo da experiência",
+              description:
+                "Controla quem pode trocar mensagens de texto com o menor dentro dos jogos e experiências do Roblox. Os pais podem configurar para 'Amigos' ou 'Ninguém' (desativando o chat de texto dentro dos jogos para impedir contato com desconhecidos)."
+            },
+            {
+              label: "Converse e forme turmas com suas amizades",
+              description:
+                "Define quem pode enviar mensagens diretas e criar grupos de jogo (turmas/parties) com a criança. O recomendado é restringir para apenas contatos aprovados ou bloquear totalmente para evitar abordagens indevidas."
+            },
+            {
+              label: "Uso de dados de voz (Bate-papo por voz)",
+              description:
+                "Gerencia o recurso de áudio por microfone em tempo real. Ao desativar o uso de voz, a criança não poderá falar nem escutar estranhos via chamada de voz durante as partidas, prevenindo exposição a ofensas verbais ou conversas impróprias."
+            },
+            {
+              label: "Entrada de câmera (Animação facial)",
+              description:
+                "Permite controlar a autorização para que o Roblox acesse a webcam e sincronize expressões faciais com o avatar. Desativar essa opção preserva a privacidade visual, garantindo que nenhum dado de vídeo seja processado pelo jogo."
+            }
+          ],
+          recommendation:
+            "Para crianças e adolescentes menores de 13 anos, a configuração recomendada é desativar o 'Uso de dados de voz' e a 'Entrada de câmera', além de manter o 'Bate-papo da experiência' restrito apenas a amigos ou totalmente desligado."
+        }
       }
     ],
     tips: [
-      "Nunca compartilhe o PIN de 4 dígitos com a criança e evite sequências óbvias.",
-      "Revise periodicamente a lista de amigos e remova contatos desconhecidos.",
-      "Explique com calma que Robux custam dinheiro real e que promessas de 'moedas grátis' na internet são golpes perigosos."
+      "Revise periodicamente as opções de 'Comunicação' para garantir que os filtros continuem adequados à idade e rotina do menor.",
+      "No Roblox, configure também um PIN de segurança de 4 dígitos na conta dos pais para que o menor não consiga reverter as restrições por conta própria.",
+      "Oriente a criança a nunca compartilhar informações pessoais (como nome completo, telefone, colégio ou endereço) em jogos online, mesmo com amigos virtuais."
     ]
   },
   {

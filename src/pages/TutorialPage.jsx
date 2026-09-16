@@ -503,6 +503,68 @@ export default function TutorialPage({ tutorial }) {
                       })}
                     </div>
                   </div>
+
+                  {/* Informative Note / Options Box below screenshot */}
+                  {step.additionalInfo && (
+                    <div className="sm:pl-14">
+                      {typeof step.additionalInfo === "string" ? (
+                        <div className="rounded-2xl border border-blue-500/20 dark:border-blue-400/20 bg-blue-50/50 dark:bg-blue-950/20 p-4 sm:p-5 text-xs sm:text-sm text-slate-700 dark:text-slate-300 flex items-start gap-3 shadow-sm">
+                          <Info className="w-4 h-4 shrink-0 text-blue-600 dark:text-blue-400 mt-0.5" />
+                          <p className="leading-relaxed">{step.additionalInfo}</p>
+                        </div>
+                      ) : (
+                        <div className="rounded-2xl border border-blue-500/20 dark:border-blue-400/20 bg-gradient-to-br from-blue-50/50 via-indigo-50/30 to-purple-50/20 dark:from-blue-950/30 dark:via-indigo-950/20 dark:to-purple-950/10 p-5 sm:p-6 space-y-4 shadow-sm">
+                          <div className="flex items-center gap-2.5 text-blue-600 dark:text-blue-400">
+                            <div className="w-8 h-8 rounded-lg bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/20 flex items-center justify-center shrink-0">
+                              <Info className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                            </div>
+                            <h4 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
+                              {step.additionalInfo.title || "Opções que os pais ou responsáveis podem executar"}
+                            </h4>
+                          </div>
+
+                          {step.additionalInfo.text && (
+                            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                              {step.additionalInfo.text}
+                            </p>
+                          )}
+
+                          {step.additionalInfo.options && step.additionalInfo.options.length > 0 && (
+                            <div className="grid gap-3 pt-1">
+                              {step.additionalInfo.options.map((opt, optIndex) => (
+                                <div
+                                  key={optIndex}
+                                  className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/30 p-3.5 sm:p-4 transition-all hover:border-blue-500/30 dark:hover:border-blue-400/30"
+                                >
+                                  <div className="flex items-start gap-2.5">
+                                    <div className="w-2 h-2 rounded-full bg-blue-500 shrink-0 mt-1.5" />
+                                    <div className="space-y-1">
+                                      <h5 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
+                                        {opt.label}
+                                      </h5>
+                                      <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                        {opt.description}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+
+                          {step.additionalInfo.recommendation && (
+                            <div className="pt-1 flex items-start gap-2.5 text-xs sm:text-sm text-blue-800 dark:text-blue-200 bg-blue-500/10 dark:bg-blue-500/15 p-3.5 rounded-xl border border-blue-500/20">
+                              <Sparkles className="w-4 h-4 shrink-0 text-blue-500 mt-0.5" />
+                              <p className="leading-relaxed">
+                                <strong className="font-semibold text-blue-900 dark:text-blue-200">Recomendação para responsáveis: </strong>
+                                {step.additionalInfo.recommendation}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </SpotlightCard>
               );
             })}
