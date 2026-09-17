@@ -7,8 +7,8 @@ Salve suas capturas em subpastas organizadas dentro de `public/screenshots/`:
 - **Windows**: `public/screenshots/windows/passo-1.png` a `passo-6.png`
 - **Roblox**: `public/screenshots/roblox/passo-1.jpg` a `passo-3.jpg`
 - **YouTube**: `public/screenshots/youtube/passo-1.png` a `passo-6.png`
-- **Android**: `public/screenshots/android/passo-1.png` a `passo-6.png`
-- **iOS**: `public/screenshots/ios/passo-1.png` a `passo-6.png`
+- **Android**: `public/screenshots/android/android-passo-01.jpeg` a `android-passo-10.jpeg`
+- **iOS**: `public/screenshots/ios/ios-tempo-de-uso-passo-01.png` a `ios-tempo-de-uso-passo-08.png`
 
 ### 2. Ativação no Código
 Abra o arquivo [src/data/tutorials.js](file:///c:/git/lei-felca/src/data/tutorials.js) e insira o caminho da imagem no campo `url` do passo correspondente:

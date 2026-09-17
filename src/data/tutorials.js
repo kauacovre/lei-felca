@@ -471,88 +471,114 @@ export const tutorials = [
     },
     steps: [
       {
-        title: "Configure o Compartilhamento Familiar nos Ajustes",
+        title: "Acesse os Ajustes e toque em \"Ativar Tempo de Uso\"",
         description:
-          "No iPhone ou iPad do responsável, abra 'Ajustes', toque no seu nome (ID Apple) no topo e selecione 'Compartilhamento Familiar'. Toque em 'Adicionar Membro' e selecione 'Criar Conta de Criança' para gerar uma conta Apple supervisionada.",
+          "No dispositivo (iPad ou iPhone), abra o aplicativo Ajustes e selecione a opção Tempo de Uso (ícone de ampulheta roxa) no menu lateral. No painel principal à direita, toque no botão azul \"Ativar Tempo de Uso\" para iniciar a configuração do recurso.",
         screenshots: [
           {
-            url: "",
-            caption: "Menu Compartilhamento Familiar com opção de criar conta de criança.",
-            placeholderTitle: "Print 1: Compartilhamento Familiar da Apple",
-            placeholderHint: "Captura da tela de Compartilhamento Familiar no ID Apple dos pais."
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-01.png",
+            caption: "Menu Ajustes com a aba 'Tempo de Uso' selecionada e o botão 'Ativar Tempo de Uso'.",
+            placeholderTitle: "Print 1: Ativar Tempo de Uso nos Ajustes",
+            placeholderHint: "Captura da tela do app Ajustes destacando a opção de ativar o Tempo de Uso."
           }
         ]
       },
       {
-        title: "Acesse o 'Tempo de Uso' e selecione a conta da criança",
+        title: "Selecione se o dispositivo é seu ou de uma criança",
         description:
-          "Ainda nos Ajustes do seu iPhone, vá em 'Tempo de Uso' e, na seção 'Família', toque no nome da criança para gerenciar remotamente todas as permissões do aparelho dela.",
+          "Na tela \"Este iPad é para Você ou para uma Criança?\", indique quem utilizará o aparelho. Toque em \"Este iPad É de uma Criança\" (ou \"Este iPad É Meu\", caso esteja configurando a partir do aparelho dos pais). Essa escolha orienta o iOS a habilitar os controles parentais adequados para menores de idade.",
         screenshots: [
           {
-            url: "",
-            caption: "Seção Família dentro do menu Tempo de Uso.",
-            placeholderTitle: "Print 2: Perfil da Criança no Tempo de Uso",
-            placeholderHint: "Captura da tela de Tempo de Uso exibindo o nome do menor gerenciado."
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-02.png",
+            caption: "Tela de confirmação de perfil com as opções 'Este iPad É Meu' e 'Este iPad É de uma Criança'.",
+            placeholderTitle: "Print 2: Perfil de Uso do Dispositivo",
+            placeholderHint: "Captura da seleção de titularidade do aparelho no assistente do iOS."
           }
         ]
       },
       {
-        title: "Crie o código PIN exclusivo do Tempo de Uso (4 dígitos)",
+        title: "Visualize o painel do Tempo de Uso e toque em \"Usar Código do Tempo de Uso\"",
         description:
-          "Toque em 'Bloquear Ajustes do Tempo de Uso' e cadastre um código numérico de 4 dígitos diferente da senha de desbloqueio da tela do aparelho, garantindo que apenas os adultos possam alterar as regras.",
+          "Com o Tempo de Uso em execução, o painel exibe a Média Diária e ferramentas como Repouso, Limites de Apps, Limites de Comunicação, Sempre Permitido e Conteúdo e Privacidade. Role a página até a parte inferior e toque na opção azul \"Usar Código do Tempo de Uso\" para criar uma senha de proteção dos pais.",
         screenshots: [
           {
-            url: "",
-            caption: "Cadastro do código de segurança de 4 dígitos do Tempo de Uso.",
-            placeholderTitle: "Print 3: Definição do Código PIN dos Responsáveis",
-            placeholderHint: "Captura da tela de criação do código de 4 dígitos do Tempo de Uso."
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-03.png",
+            caption: "Painel do Tempo de Uso destacando as opções de controle e o botão 'Usar Código do Tempo de Uso'.",
+            placeholderTitle: "Print 3: Painel do Tempo de Uso",
+            placeholderHint: "Captura da tela principal com as opções de controle e criação de código."
           }
         ]
       },
       {
-        title: "Programe o Repouso noturno (Downtime)",
+        title: "Crie um PIN em \"Defina um Código para o Tempo de Uso\"",
         description:
-          "Toque em 'Repouso' e ative a chave 'Agendado'. Defina o horário de início e fim (ex: das 21h30 às 07h00). Durante esse período, o iPhone bloqueia automaticamente todos os aplicativos de distração, mantendo apenas chamadas telefônicas e contatos de emergência liberados.",
+          "Na janela pop-up \"Definir Código\", digite uma senha numérica de 4 dígitos nos campos de \"Defina um Código para o Tempo de Uso\". O sistema solicitará a confirmação repetindo o mesmo PIN. Importante: esse código impede que a criança desative limites ou modifique as regras e deve ser diferente da senha padrão de desbloqueio da tela.",
         screenshots: [
           {
-            url: "",
-            caption: "Programação de horário de Repouso noturno nos Ajustes.",
-            placeholderTitle: "Print 4: Agendamento do Período de Repouso",
-            placeholderHint: "Captura do horário de Repouso agendado no iOS."
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-04.png",
+            caption: "Pop-up 'Definir Código' solicitando a criação de uma senha numérica de 4 dígitos.",
+            placeholderTitle: "Print 4: Criação do Código PIN",
+            placeholderHint: "Captura do pop-up para definir o código numérico exclusivo dos responsáveis."
           }
         ]
       },
       {
-        title: "Estabeleça Limites de Apps para Jogos e Redes Sociais",
+        title: "Vincule seu ID Apple na \"Recuperação do Código do Tempo de Uso\"",
         description:
-          "Toque em 'Limites de Apps' > 'Adicionar Limite'. Selecione as categorias que deseja controlar (como 'Jogos' ou 'Redes Sociais') e determine a quantidade máxima de horas e minutos de tela diários autorizados.",
+          "Na janela \"Recuperação do Código do Tempo de Uso\", digite o endereço de e-mail da sua conta ID Apple de responsável no campo indicado e toque em OK. Essa etapa garante que você consiga redefinir o código de 4 dígitos com segurança caso venha a esquecê-lo.",
         screenshots: [
           {
-            url: "",
-            caption: "Adição de limite diário para categorias de aplicativos.",
-            placeholderTitle: "Print 5: Limites de Apps por Categoria",
-            placeholderHint: "Captura da seleção de categorias e horas máximas permitidas no iOS."
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-05.png",
+            caption: "Janela de recuperação de código para vincular a conta do ID Apple do responsável.",
+            placeholderTitle: "Print 5: Recuperação do Código com ID Apple",
+            placeholderHint: "Captura do formulário de recuperação de senha por meio da conta Apple."
           }
         ]
       },
       {
-        title: "Ative Restrições de Conteúdo, Compras e Privacidade",
+        title: "Acesse a seção \"Limites de Apps\" e toque em \"Adicionar Limite\"",
         description:
-          "Em 'Conteúdo e Privacidade', ative a chave principal. Em 'Compras no iTunes e App Store', defina 'Não Permitir' para Compras dentro de apps e ative o 'Pedir para Comprar'. Em 'Conteúdo da Web', escolha 'Limitar Sites Adultos' para blindar o Safari contra páginas inadequadas.",
+          "No painel do Tempo de Uso, abra a seção Limites de Apps (ícone de ampulheta laranja). Leia as instruções informando que os limites são redefinidos à meia-noite e toque no botão azul \"Adicionar Limite\" para criar uma nova restrição diária. Se solicitado, insira o código PIN de 4 dígitos recém-criado.",
         screenshots: [
           {
-            url: "",
-            caption: "Bloqueio de compras e restrição de sites adultos no Safari.",
-            placeholderTitle: "Print 6: Restrições de Conteúdo, Compras e Safari",
-            placeholderHint: "Captura do menu Conteúdo e Privacidade com compras no app e sites adultos desativados."
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-06.png",
+            caption: "Tela de Limites de Apps exibindo a opção em destaque 'Adicionar Limite'.",
+            placeholderTitle: "Print 6: Adicionar Limite de Aplicativos",
+            placeholderHint: "Captura da área de Limites de Apps antes da inclusão de regras."
+          }
+        ]
+      },
+      {
+        title: "Selecione as categorias ou aplicativos em \"Apps, Categorias e Sites Mais Usados\"",
+        description:
+          "Na janela \"Selecione\", navegue pelas opções em \"APPS, CATEGORIAS E SITES MAIS USADOS\". Você pode marcar uma categoria inteira (como \"Jogos\" ou \"Redes Sociais\") ou expandir a categoria para selecionar apenas aplicativos ou jogos específicos. Após marcar as caixas de seleção desejadas, toque em Seguinte no canto superior direito.",
+        screenshots: [
+          {
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-07.png",
+            caption: "Modal de seleção com categorias de apps e jogos disponíveis para limitação.",
+            placeholderTitle: "Print 7: Seleção de Categorias e Apps",
+            placeholderHint: "Captura da lista de categorias prontas para seleção no iOS."
+          }
+        ]
+      },
+      {
+        title: "Defina o tempo diário, ative \"Bloquear ao Fim do Limite\" e toque em \"Adicionar\"",
+        description:
+          "Defina no campo Tempo as horas e minutos diários autorizados para o uso dos apps selecionados (por exemplo, \"45 min, Todos os Dias\"). Em seguida, ative a chave \"Bloquear ao Fim do Limite\" para impedir o uso quando o tempo se esgotar. Por fim, toque em Adicionar no canto superior direito para gravar o limite.",
+        screenshots: [
+          {
+            url: "/screenshots/ios/ios-tempo-de-uso-passo-08.png",
+            caption: "Configuração de tempo diário com a chave 'Bloquear ao Fim do Limite' ativada e botão 'Adicionar'.",
+            placeholderTitle: "Print 8: Definição de Tempo e Bloqueio",
+            placeholderHint: "Captura da conclusão do limite de app com o bloqueio automático habilitado."
           }
         ]
       }
     ],
     tips: [
-      "Nunca utilize datas de aniversário familiares ou o mesmo código de desbloqueio da tela no código do Tempo de Uso.",
-      "Deixe os contatos dos pais e serviços de emergência sempre na lista de 'Sempre Permitidos' para ligações urgentes.",
-      "Com o 'Pedir para Comprar' ativo, qualquer download pago ou gratuito na App Store enviará uma notificação imediata para aprovação no celular dos pais."
+      "Defina um código do Tempo de Uso diferente do código de desbloqueio da tela do aparelho para evitar que a criança altere as configurações.",
+      "Mantenha a chave 'Bloquear ao Fim do Limite' sempre ativada para garantir que o acesso aos apps seja bloqueado automaticamente quando o tempo expirar.",
+      "Cadastre um ID Apple válido dos responsáveis na recuperação para nunca perder o acesso aos ajustes caso esqueça o código PIN de 4 dígitos."
     ]
   }
 ];
